@@ -7,7 +7,15 @@ const config = {
 		formats: ["image/webp"]
 	},
 	serverRuntimeConfig: {},
-	publicRuntimeConfig: {},
+	publicRuntimeConfig: {
+		contentful: {
+			baseUrl: process.env.CONTENTFUL_BASE_URL,
+			space: process.env.CONTENTFUL_SPACE_ID,
+			token: process.env.CONTENTFUL_TOKEN,
+			env: process.env.CONTENTFUL_ENV,
+			previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN
+		}
+	},
 	eslint: {
 		ignoreDuringBuilds: true
 	},

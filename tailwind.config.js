@@ -3,7 +3,7 @@ const { spacingScale } = require("./src/shared/styles/spacing");
 
 module.exports = {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
-	darkMode: false, // or 'media' or 'class'
+	darkMode: "media",
 	theme: {
 		spacing: spacingScale,
 		extend: {}
